@@ -1,64 +1,50 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono, DM_Sans, Instrument_Serif } from "next/font/google";
-import "./globals.css";
-import { Navigation } from "./components/Navigation";
-import { Footer } from "./components/Footer";
-import { ScrollAnimations } from "./components/ScrollAnimations";
+import { DM_Sans, JetBrains_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import { SiteFooter } from "./components/SiteFooter";
+import { SiteHeader } from "./components/SiteHeader";
+import { siteProfile } from "./lib/site";
+import "./globals.css";
 
-const mono = JetBrains_Mono({
-  variable: "--font-mono",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "700"],
-});
-
-const sans = DM_Sans({
-  variable: "--font-dm-sans",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
-});
-
-const serif = Instrument_Serif({
-  variable: "--font-serif",
-  subsets: ["latin"],
-  weight: "400",
-  style: ["normal", "italic"],
-});
+const sans = DM_Sans({ variable: "--font-dm-sans", subsets: ["latin"], weight: ["400", "500", "600", "700"], display: "swap" });
+const mono = JetBrains_Mono({ variable: "--font-mono", subsets: ["latin"], weight: ["400", "500", "600"], display: "swap" });
 
 export const metadata: Metadata = {
-  title: "Arthur Asasira — Software Engineer",
-  description:
-    "Building digital tools for emerging markets. IoT Researcher. Community Leader. Kampala, Uganda.",
-  keywords: [
-    "Software Engineer",
-    "Makerere University",
-    "IoT",
-    "Next.js",
-    "Community Leader",
-    "Uganda",
-    "Arthur Asasira",
-  ],
-  authors: [{ name: "Arthur Asasira" }],
-  openGraph: {
-    title: "Arthur Asasira — Software Engineer",
-    description: "Building digital tools for emerging markets",
-    type: "website",
+  metadataBase: new URL(siteProfile.canonicalUrl),
+  title: {
+    default: "Arthur Asasira — Software, embedded systems, and IoT builder",
+    template: "%s — Arthur Asasira",
   },
+  description: "Arthur Asasira builds software and connected systems across devices, networks, backend services, testing, and real-world operations.",
+  alternates: { canonical: "/" },
+  authors: [{ name: siteProfile.name, url: siteProfile.canonicalUrl }],
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: siteProfile.name,
+    title: "Arthur Asasira — Software, embedded systems, and IoT builder",
+    description: "Connected systems, deployed software, test automation, and hands-on manufacturing experience.",
+    url: "/",
+    images: [{ url: "/og-card.svg", width: 1200, height: 630, alt: "Arthur Asasira portfolio" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Arthur Asasira — Software, embedded systems, and IoT builder",
+    description: "Connected systems, deployed software, test automation, and hands-on manufacturing experience.",
+    images: ["/og-card.svg"],
+  },
+  icons: { icon: "/favicon.ico" },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body
-        className={`${mono.variable} ${sans.variable} ${serif.variable} antialiased`}
-      >
+      <body className={`${sans.variable} ${mono.variable}`}>
+        <a className="skip-link print-hidden" href="#main-content">Skip to content</a>
+        <SiteHeader />
+        <main id="main-content">{children}</main>
+        <SiteFooter />
         <Analytics />
-        <Navigation />
-        <main>{children}</main>
-        <Footer />
-        <ScrollAnimations />
       </body>
     </html>
   );
