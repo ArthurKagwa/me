@@ -1,71 +1,39 @@
 const EDUCATION = [
   {
+    period: "2026–Present",
+    title: "A.S. Engineering Science — Electrical & Computer Engineering",
+    org: "Middlesex Community College",
+    sub: "Bedford, Massachusetts · In progress",
+  },
+  {
     period: "2023–2026",
-    title: "BSc Software Engineering",
+    title: "Software Engineering coursework",
     org: "Makerere University",
-    sub: "Kampala, Uganda · 3rd Year",
-  },
-  {
-    period: "2020–2022",
-    title: "A Level",
-    org: "Ntare School, Mbarara",
-    sub: null,
-  },
-  {
-    period: "2016–2019",
-    title: "O Level",
-    org: "Kitabi Seminary, Bushenyi",
-    sub: null,
+    sub: "108 U.S.-equivalent credits · GPA 3.53 · WES evaluation",
   },
 ];
 
 const EXPERIENCE = [
   {
+    period: "Apr 2026–Present",
+    title: "Medical Device Assembler",
+    org: "Jabil · Eastridge contract",
+    desc: "Precision assembly, visual inspection, defect escalation, and documented work in a regulated medical-device manufacturing environment.",
+  },
+  {
     period: "2025–2026",
-    title: "IoT Intern",
+    title: "IoT Research and Development Intern",
     org: "IoT Research & Application Lab (IoT-ra)",
-    desc: "Enhanced Power Management in IoT Environmental Monitoring · Bee hive IoT monitoring · Mushroom growth automation",
-  },
-  {
-    period: "2025–Now",
-    title: "IEEE PES Chapter Chair",
-    org: "IEEE Makerere University Student Branch",
-    desc: "Coordinating chapter activities, partnerships & technical events",
-  },
-  {
-    period: "2025–Now",
-    title: "Co-Lead",
-    org: "Google Developer Groups on Campus, Makerere",
-    desc: "Coordinating core team, event organisation & developer outreach",
-  },
-  {
-    period: "2025",
-    title: "Millennium Fellow",
-    org: "Millennium Campus Network · Class of 2025",
-    desc: "Civic leadership & global development program",
-  },
-  {
-    period: "2025–Now",
-    title: "AWS Club Webmaster",
-    org: "AWS Cloud Club, Makerere University",
-    desc: "Managing student club website & digital presence",
-  },
-  {
-    period: "2024–2025",
-    title: "Media Lead",
-    org: "Google Developer Groups on Campus, Makerere",
-    desc: "Branding, visual design & social media management",
+    desc: "Connected-device research spanning LoRaWAN, GSM, Wi-Fi, sensing, beehive monitoring, automated mushroom environments, and device-integration troubleshooting.",
   },
 ];
 
 const SKILLS = [
-  { label: "languages", value: "TypeScript · Python · PHP" },
-  { label: "frontend",  value: "React · Next.js" },
-  { label: "backend",   value: "Django · FastAPI · Laravel" },
-  { label: "cloud",     value: "AWS · GCP · Azure · Docker" },
-  { label: "research",  value: "IoT · LoRaWAN · Environmental Sensing" },
-  { label: "data",      value: "Pandas · NumPy · Scikit-learn · TensorFlow" },
-  { label: "tools",     value: "Git / GitHub · PostgreSQL · Canva" },
+  { label: "support", value: "Windows · Linux · Troubleshooting · Device Setup · Logs" },
+  { label: "networks", value: "TCP/IP · DNS · DHCP · Wi-Fi · IP Addressing" },
+  { label: "software", value: "Python · Java · PHP · C · SQL · APIs · Git · Testing" },
+  { label: "systems", value: "LoRaWAN · GSM · Sensors · ESP32 / Arduino-class Devices" },
+  { label: "platforms", value: "Next.js · Django · FastAPI · PostgreSQL · Docker" },
 ];
 
 export function Resume() {
@@ -88,7 +56,7 @@ export function Resume() {
             marginBottom: 60,
           }}
         >
-          // cv.json
+          {"// cv.json"}
         </div>
 
         {/* Education + Experience */}

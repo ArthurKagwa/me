@@ -28,7 +28,7 @@ export function Footer() {
             color: "var(--dim)",
           }}
         >
-          © 2026 Arthur Asasira · Kampala, Uganda
+          © 2026 Arthur Asasira · Acton / Greater Boston
         </span>
         <a
           href="#top"

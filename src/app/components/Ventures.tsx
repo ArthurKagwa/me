@@ -1,30 +1,40 @@
 const VENTURES = [
   {
     num: "01",
-    title: "Itungo",
-    link: "https://itungo.com",
-    est: "Est. 2024 · Live",
-    quote: "\u201cFarming the smart way.\u201d",
-    desc: "Having grown up on a farm, Arthur understood the chaos of manual record keeping across cattle, sheep, and goat operations. Itungo is the system that didn\u2019t exist \u2014 a comprehensive farm management platform built specifically for smallholder farmers in East Africa.",
-    tech: ["TypeScript", "Next.js", "Microservices", "PostgreSQL", "Docker", "AWS"],
+    title: "Mini Manufacturing Test Station",
+    link: "mailto:arthurasasira1@gmail.com",
+    est: "Building · Test automation",
+    quote: "\u201cMake the result repeatable.\u201d",
+    desc: "A compact station for exercising hardware, collecting results, and turning test outcomes into a clear manufacturing record. It remains a build-in-progress until the measurements and failure cases are ready to publish.",
+    tech: ["Python", "Hardware Test", "Automation", "Logging"],
     delay: "0",
   },
   {
     num: "02",
-    title: "TundaMate",
-    link: "https://tundamate.xyz",
-    est: "Est. 2024 · Live",
-    quote: "\u201cBuilt for small businesses that mean business.\u201d",
-    desc: "Small businesses in Uganda run on low resources without access to infrastructure-intensive systems. TundaMate is a lightweight, smart inventory management and POS tool that lives in the business owner\u2019s palm \u2014 no enterprise bloat, no heavy setup.",
-    tech: ["FastAPI", "Next.js", "TypeScript", "PostgreSQL", "Python"],
+    title: "Adaptive Connectivity Lab",
+    link: "mailto:arthurasasira1@gmail.com",
+    est: "Building · Connected systems",
+    quote: "\u201cKeep the system connected when conditions change.\u201d",
+    desc: "An ESP32-based lab for comparing Wi-Fi, GSM, and LoRaWAN behavior under changing conditions, with deliberate failure injection and documented recovery paths.",
+    tech: ["ESP32", "LoRaWAN", "GSM", "Wi-Fi", "Python"],
     delay: "100",
+  },
+  {
+    num: "03",
+    title: "Connected Equipment Monitor",
+    link: "mailto:arthurasasira1@gmail.com",
+    est: "Building · Monitoring",
+    quote: "\u201cMake machine state visible.\u201d",
+    desc: "A connected monitoring concept for collecting equipment signals, surfacing useful status, and documenting the checks needed before a technician trusts the reading.",
+    tech: ["Sensors", "Embedded Systems", "APIs", "Diagnostics"],
+    delay: "200",
   },
 ];
 
 export function Ventures() {
   return (
     <section
-      id="ventures"
+      id="building"
       style={{ borderTop: "1px solid var(--border)", scrollMarginTop: 56 }}
     >
       <div
@@ -41,7 +51,7 @@ export function Ventures() {
             marginBottom: 60,
           }}
         >
-          // ventures
+          {"// building"}
         </div>
 
         <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
@@ -81,7 +91,7 @@ export function Ventures() {
                       marginBottom: 20,
                     }}
                   >
-                    {v.num} / VENTURE
+                    {v.num} / BUILDING
                   </div>
                   <h3
                     style={{
@@ -124,7 +134,7 @@ export function Ventures() {
                     width: "fit-content",
                   }}
                 >
-                  ↗ {v.link.replace("https://", "")}
+                  ↗ Discuss this build
                 </a>
               </div>
 

@@ -1,14 +1,13 @@
 const TOPICS = [
-  "IoT & LoRaWAN for Environmental Monitoring",
-  "Building Digital Products for Emerging Markets",
-  "Community-Driven Developer Ecosystems",
-  "Blockchain, Data Science & Cybersecurity",
+  "Build across software, devices, networks, and operators",
+  "Verify systems with tests, measurements, failures, and logs",
+  "Design for reliability, documentation, and the real environment",
 ];
 
 export function Speaking() {
   return (
     <section
-      id="speaking"
+      id="principles"
       style={{ borderTop: "1px solid var(--border)", scrollMarginTop: 56 }}
     >
       <div
@@ -25,7 +24,7 @@ export function Speaking() {
             marginBottom: 60,
           }}
         >
-          // speaking
+          {"// principles"}
         </div>
 
         <div
@@ -49,9 +48,9 @@ export function Speaking() {
                 marginBottom: 24,
               }}
             >
-              Community &amp;
+              Engineering
               <br />
-              <em style={{ color: "var(--accent)" }}>Public Presence</em>
+              <em style={{ color: "var(--accent)" }}>principles &amp; community</em>
             </h2>
             <p
               data-animate=""
@@ -63,9 +62,10 @@ export function Speaking() {
                 marginBottom: 36,
               }}
             >
-              IEEE PES Chapter Chair, GDG organiser, and Millennium Fellow —
-              Arthur speaks on engineering for emerging markets, IoT, and
-              community-driven development.
+              The demo is only the beginning. Arthur builds across boundaries,
+              verifies the full system, and treats reliability and documentation
+              as part of the product. His IEEE and Google developer-community work
+              also reflects a habit of making technical ideas understandable.
             </p>
             <a
               href="https://sessionize.com/asasira-arthur/"
@@ -106,7 +106,7 @@ export function Speaking() {
                 marginBottom: 8,
               }}
             >
-              Delivered Talks
+              Community evidence
             </div>
 
             <a
@@ -205,7 +205,7 @@ export function Speaking() {
                 marginBottom: 8,
               }}
             >
-              Available to Speak On
+              Operating principles
             </div>
 
             <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>

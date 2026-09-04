@@ -3,23 +3,23 @@ import Image from "next/image";
 const CARDS = [
   {
     icon: "◉",
-    title: "Makerere University",
-    sub: "BSc Software Engineering · 2023–2026",
+    title: "Middlesex Community College",
+    sub: "Electrical & Computer Engineering · In progress",
   },
   {
     icon: "◈",
-    title: "IoT Researcher",
-    sub: "IoT-ra Lab · Environmental Monitoring",
+    title: "Medical-device manufacturing",
+    sub: "Jabil · Procedure, quality & traceability",
   },
   {
     icon: "◇",
-    title: "Community Leader",
-    sub: "IEEE PES Chapter Chair · GDGoC Co-Lead · MCN Fellow",
+    title: "Connected-systems research",
+    sub: "IoT-ra · Sensors & adaptive communications",
   },
   {
     icon: "◆",
-    title: "Entrepreneur",
-    sub: "Itungo · TundaMate · Both live",
+    title: "Deployed software",
+    sub: "Yoshule · TundaMate · Qreze",
   },
 ];
 
@@ -43,7 +43,7 @@ export function About() {
             marginBottom: 60,
           }}
         >
-          // about
+          {"// about"}
         </div>
 
         <div
@@ -109,17 +109,19 @@ export function About() {
                 fontWeight: 300,
               }}
             >
-              Software Engineering student at Makerere University, Kampala.
-              Building digital tools that address real problems in emerging markets.
+              I build connected systems across software, devices, networks, and
+              real-world operations. I am based in Acton, Massachusetts, and open
+              to technical opportunities across Greater Boston.
             </p>
 
             <p
               data-animate=""
               style={{ fontSize: 17, lineHeight: 1.8, color: "var(--dim)", fontWeight: 300 }}
             >
-              Researcher at the IoT Research &amp; Application Lab, exploring sustainable
-              technology through connected devices. Community leader, environmental
-              advocate, and founder of two live internet products.
+              I am studying Electrical &amp; Computer Engineering at Middlesex after
+              completing 108 U.S.-equivalent semester credits in Software Engineering
+              at Makerere. My experience spans deployed web products, IoT research,
+              technical troubleshooting, and regulated medical-device manufacturing.
             </p>
           </div>
 

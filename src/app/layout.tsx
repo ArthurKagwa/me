@@ -26,22 +26,26 @@ const serif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Arthur Asasira — Software Engineer",
+  metadataBase: new URL("https://asasira.dev"),
+  title: "Arthur Asasira — Software, embedded systems, and IoT builder",
   description:
-    "Building digital tools for emerging markets. IoT Researcher. Community Leader. Kampala, Uganda.",
+    "Arthur Asasira builds software and connected systems across devices, networks, backend services, testing, and real-world operations.",
+  alternates: { canonical: "/" },
   keywords: [
     "Software Engineer",
-    "Makerere University",
+    "Embedded Systems",
     "IoT",
     "Next.js",
-    "Community Leader",
-    "Uganda",
+    "Technical Support",
+    "Greater Boston",
     "Arthur Asasira",
   ],
   authors: [{ name: "Arthur Asasira" }],
   openGraph: {
-    title: "Arthur Asasira — Software Engineer",
-    description: "Building digital tools for emerging markets",
+    title: "Arthur Asasira — Software, embedded systems, and IoT builder",
+    description: "Connected systems, deployed software, test automation, and hands-on manufacturing experience.",
+    url: "https://asasira.dev",
+    siteName: "Arthur Asasira",
     type: "website",
   },
 };

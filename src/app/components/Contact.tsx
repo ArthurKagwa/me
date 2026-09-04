@@ -5,19 +5,19 @@ const SOCIALS = [
     href: "https://github.com/ArthurKagwa",
   },
   {
-    label: "X / Twitter",
-    handle: "@kagwa_arthur",
-    href: "https://x.com/kagwa_arthur",
-  },
-  {
     label: "LinkedIn",
-    handle: "asasira-arthur",
+    handle: "Arthur Asasira",
     href: "https://linkedin.com/in/asasira-arthur-602a131ab/",
   },
   {
-    label: "Speaking",
-    handle: "Sessionize",
-    href: "https://sessionize.com/asasira-arthur/",
+    label: "Résumé",
+    handle: "Experience & education",
+    href: "#resume",
+  },
+  {
+    label: "Projects",
+    handle: "Verified live work",
+    href: "#work",
   },
 ];
 
@@ -41,7 +41,7 @@ export function Contact() {
             marginBottom: 60,
           }}
         >
-          // contact
+          {"// contact"}
         </div>
 
         <div
@@ -65,9 +65,9 @@ export function Contact() {
                 marginBottom: 24,
               }}
             >
-              Let&apos;s build
+              Let&apos;s make the system
               <br />
-              <em style={{ color: "var(--accent)" }}>something great.</em>
+              <em style={{ color: "var(--accent)" }}>work in the real world.</em>
             </h2>
             <p
               data-animate=""
@@ -79,9 +79,9 @@ export function Contact() {
                 marginBottom: 36,
               }}
             >
-              Open to collaboration, internships, and technical conversations.
-              Always interested in projects at the intersection of technology and
-              real-world impact.
+              Based in Acton and available across Greater Boston. Open to software,
+              embedded-systems, IoT, manufacturing and electronics test, IT support,
+              and technician opportunities.
             </p>
             <a
               href="mailto:arthurasasira1@gmail.com"
@@ -112,8 +112,8 @@ export function Contact() {
               <a
                 key={s.label}
                 href={s.href}
-                target="_blank"
-                rel="noopener noreferrer"
+                target={s.href.startsWith("http") ? "_blank" : undefined}
+                rel={s.href.startsWith("http") ? "noopener noreferrer" : undefined}
                 className="hc"
                 style={{
                   padding: "22px 24px",

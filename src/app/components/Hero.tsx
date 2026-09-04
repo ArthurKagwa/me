@@ -3,10 +3,10 @@
 import { useEffect, useRef, useState } from "react";
 
 const ROLES = [
-  "Software Engineer",
-  "IoT Researcher",
-  "Entrepreneur",
-  "Community Leader",
+  "Software Builder",
+  "Embedded Systems Builder",
+  "IoT Builder",
+  "Technical Problem-Solver",
 ];
 
 export function Hero() {
@@ -94,7 +94,7 @@ export function Hero() {
               marginBottom: 12,
             }}
           >
-            Software Engineer · IoT Researcher · Entrepreneur
+            Software · Embedded Systems · IoT · Technical Support
           </div>
 
           <h1
@@ -146,8 +146,9 @@ export function Hero() {
               marginBottom: 40,
             }}
           >
-            Building digital tools for emerging markets. Researching IoT for
-            sustainability. Leading developer communities out of Kampala, Uganda.
+            I build connected systems across the stack—from sensors and
+            communications to backend services and usable products. Based in
+            Acton and open to opportunities across Greater Boston.
           </p>
 
           <div
@@ -203,15 +204,16 @@ export function Hero() {
             }}
           >
             <div>
-              <div>TypeScript · Python · PHP</div>
-              <div>Next.js · Django · FastAPI</div>
-              <div>IoT · LoRaWAN · AWS</div>
+              <div>Python · TypeScript · C · SQL</div>
+              <div>Next.js · APIs · Test Automation</div>
+              <div>ESP32 · LoRaWAN · TCP/IP</div>
             </div>
             <div>
-              <div style={{ color: "var(--accent)" }}>itungo.com</div>
+              <div style={{ color: "var(--accent)" }}>yoshule.com</div>
               <div style={{ color: "var(--accent)" }}>tundamate.xyz</div>
-              <div style={{ marginTop: 8 }}>Makerere University</div>
-              <div>IEEE PES Chair</div>
+              <div style={{ color: "var(--accent)" }}>app.qreze.com</div>
+              <div style={{ marginTop: 8 }}>Middlesex ECE</div>
+              <div>Medical-device manufacturing</div>
             </div>
           </div>
         </div>
@@ -274,7 +276,7 @@ export function Hero() {
                 </div>
                 <div style={{ paddingLeft: 14, color: "#e2e2e2", marginBottom: 18 }}>
                   Arthur Asasira{" "}
-                  <span style={{ color: "#909090", fontSize: 12 }}>// Maestro</span>
+                  <span style={{ color: "#909090", fontSize: 12 }}>{"// Maestro"}</span>
                 </div>
 
                 <div>
@@ -291,20 +293,21 @@ export function Hero() {
                 <div>
                   <span style={{ color: "var(--accent)" }}>asasira.dev</span>
                   <span style={{ color: "#909090" }}>:~$</span>
-                  <span style={{ color: "#e2e2e2" }}> ls ventures/</span>
+                  <span style={{ color: "#e2e2e2" }}> ls projects/</span>
                 </div>
                 <div style={{ paddingLeft: 14, marginBottom: 18, display: "flex", gap: 28 }}>
-                  <span style={{ color: "#60a5fa" }}>itungo/</span>
+                  <span style={{ color: "#60a5fa" }}>yoshule/</span>
                   <span style={{ color: "#60a5fa" }}>tundamate/</span>
+                  <span style={{ color: "#60a5fa" }}>qreze/</span>
                 </div>
 
                 <div>
                   <span style={{ color: "var(--accent)" }}>asasira.dev</span>
                   <span style={{ color: "#909090" }}>:~$</span>
-                  <span style={{ color: "#e2e2e2" }}> locate --uni</span>
+                  <span style={{ color: "#e2e2e2" }}> locate --current</span>
                 </div>
                 <div style={{ paddingLeft: 14, marginBottom: 18, color: "#909090" }}>
-                  /education/makerere/software-eng
+                  /acton/greater-boston/connected-systems
                 </div>
 
                 <div>
@@ -325,7 +328,7 @@ export function Hero() {
                 letterSpacing: "0.04em",
               }}
             >
-              <b>KAMPALA, UGANDA</b>
+              <b>ACTON, MASSACHUSETTS · GREATER BOSTON</b>
             </div>
           </div>
         </div>

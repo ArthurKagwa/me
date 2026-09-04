@@ -1,11 +1,11 @@
 const PROJECTS = [
   {
     num: "01",
-    title: "Itungo",
-    link: "https://itungo.com",
-    linkLabel: "↗ itungo.com",
-    desc: "Comprehensive farm management platform for smallholder farmers — livestock tracking, health monitoring, and yield analytics in one dashboard.",
-    tech: ["Next.js", "Microservices", "PostgreSQL", "Docker"],
+    title: "Yoshule",
+    link: "https://yoshule.com",
+    linkLabel: "↗ yoshule.com",
+    desc: "A school operations platform connecting admissions, fees, payroll, timetabling, and assessment in one working system.",
+    tech: ["Web Application", "APIs", "Data Workflows", "Deployment"],
     delay: "0",
   },
   {
@@ -13,26 +13,26 @@ const PROJECTS = [
     title: "TundaMate",
     link: "https://tundamate.xyz",
     linkLabel: "↗ tundamate.xyz",
-    desc: "Smart inventory management and point-of-sale for SMBs in Uganda — built to live in the business owner's palm, no heavy infrastructure required.",
+    desc: "A lightweight inventory and sales system for small businesses that need a practical view of stock and daily activity.",
     tech: ["FastAPI", "Next.js", "PostgreSQL", "TypeScript"],
     delay: "80",
   },
   {
     num: "03",
-    title: "Hive Monitor",
-    link: null,
-    linkLabel: "IoT-ra Lab",
-    desc: "IoT-powered bee hive monitoring system — real-time sensor data on hive health, temperature, and colony activity for precision apiculture.",
-    tech: ["IoT", "LoRaWAN", "Python", "Environmental"],
+    title: "Qreze",
+    link: "https://app.qreze.com",
+    linkLabel: "↗ app.qreze.com",
+    desc: "A planning product for setting out the month, recording activity as it happens, and reducing guesswork later.",
+    tech: ["Web Application", "Workflow Design", "Data Storage", "Deployment"],
     delay: "160",
   },
   {
     num: "04",
-    title: "MushPi",
-    link: null,
-    linkLabel: "IoT-ra Lab",
-    desc: "Automated mushroom cultivation environment controller — regulates humidity, CO₂, and temperature with closed-loop sensor feedback.",
-    tech: ["IoT", "Automation", "Python", "AgriTech"],
+    title: "Itungo",
+    link: "https://itungo.com",
+    linkLabel: "↗ itungo.com",
+    desc: "A practical farm-management platform for livestock records, health, nutrition, and day-to-day operations.",
+    tech: ["Next.js", "Microservices", "PostgreSQL", "Docker"],
     delay: "240",
   },
 ];
@@ -57,7 +57,7 @@ export function Work() {
             marginBottom: 60,
           }}
         >
-          // work
+          {"// work"}
         </div>
 
         <div

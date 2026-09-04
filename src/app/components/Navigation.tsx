@@ -5,9 +5,9 @@ import { useEffect, useState } from "react";
 const NAV_LINKS = [
   { href: "#about",    label: "about"    },
   { href: "#work",     label: "work"     },
-  { href: "#ventures", label: "ventures" },
+  { href: "#building", label: "building" },
   { href: "#resume",   label: "resume"   },
-  { href: "#speaking", label: "speaking" },
+  { href: "#principles", label: "principles" },
   { href: "#contact",  label: "contact"  },
 ];
 
@@ -17,8 +17,9 @@ export function Navigation() {
   useEffect(() => {
     const stored = localStorage.getItem("v2-theme");
     if (stored === "light") {
-      setDark(false);
       document.documentElement.classList.add("light");
+      const frame = requestAnimationFrame(() => setDark(false));
+      return () => cancelAnimationFrame(frame);
     }
   }, []);
 
