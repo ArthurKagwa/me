@@ -1,30 +1,100 @@
 const EDUCATION = [
   {
-    period: "2026–Present",
+    period: "2026–May 2028",
     title: "A.S. Engineering Science — Electrical & Computer Engineering",
     org: "Middlesex Community College",
-    sub: "Bedford, Massachusetts · In progress",
+    sub: "Bedford, Massachusetts · Expected May 2028",
   },
   {
     period: "2023–2026",
     title: "Software Engineering coursework",
     org: "Makerere University",
-    sub: "108 U.S.-equivalent credits · GPA 3.53 · WES evaluation",
+    sub: "108 U.S.-equivalent credits · GPA 3.53 · WES evaluation · Transferred to MCC",
   },
 ];
 
 const EXPERIENCE = [
   {
-    period: "Apr 2026–Present",
-    title: "Medical Device Assembler",
-    org: "Jabil · Eastridge contract",
-    desc: "Precision assembly, visual inspection, defect escalation, and documented work in a regulated medical-device manufacturing environment.",
+    period: "Mar 2026–Present",
+    title: "Founder & Software Developer",
+    org: "Asasira.dev · Remote",
+    desc: "Build Yoshule (school management) and TundaMate (inventory and POS), live products shaped by user feedback.",
   },
   {
-    period: "2025–2026",
+    period: "Apr 2026–Present",
+    title: "Medical Device Assembler",
+    org: "Jabil · Eastridge contract · Clinton, MA",
+    desc: "Assemble and inspect medical device components in a regulated cleanroom on 12-hour shifts, with defect escalation and documented work.",
+  },
+  {
+    period: "Jun 2025–Mar 2026",
     title: "IoT Research and Development Intern",
-    org: "IoT Research & Application Lab (IoT-ra)",
-    desc: "Connected-device research spanning LoRaWAN, GSM, Wi-Fi, sensing, beehive monitoring, automated mushroom environments, and device-integration troubleshooting.",
+    org: "IoT Research & Application Lab (IoT-ra) · Kampala",
+    desc: "Built and tested Raspberry Pi and sensor prototypes across LoRaWAN, GSM, and Wi-Fi, including beehive monitoring and automated mushroom environments; created tools that replaced manual test logs.",
+  },
+];
+
+const LEADERSHIP = [
+  {
+    org: "Google Developer Groups on Campus · Makerere University",
+    roles: [
+      {
+        title: "Co-Lead",
+        period: "Aug 2025–Feb 2026",
+        points: [
+          "Ran the chapter with the Lead and core team, coordinating weekly meetups and workshops for 1,214 members.",
+          "Hosted 15+ events averaging 30 attendees, collecting feedback to shape future sessions.",
+        ],
+      },
+      {
+        title: "Media Lead",
+        period: "Oct 2024–Jul 2025",
+        points: [
+          "Designed Canva posters, carousels, and highlight reels for workshops including Build with AI.",
+          "Managed the chapter's LinkedIn, X, and WhatsApp channels to drive event registrations.",
+        ],
+      },
+    ],
+  },
+  {
+    org: "IEEE Makerere University Student Branch",
+    roles: [
+      {
+        title: "Chair, IEEE PES Student Chapter",
+        period: "2025–Feb 2026",
+        points: [
+          "Led the chapter's executive team and set its program of technical talks and events.",
+        ],
+      },
+      {
+        title: "Treasurer, Student Branch",
+        period: "Apr 2025–Feb 2026",
+        points: [
+          "Managed branch finances across all events and activities, keeping all funding fully accounted for.",
+        ],
+      },
+    ],
+  },
+  {
+    org: "Millennium Fellowship · UN Academic Impact & Millennium Campus Network",
+    roles: [
+      {
+        title: "Millennium Fellow, Class of 2025",
+        period: "2025",
+        points: [
+          "Selected from 60,000+ applicants; led ECO-COPS, a youth environmental advocacy project (SDGs 6 and 13).",
+        ],
+      },
+    ],
+  },
+  {
+    org: "Additional roles & speaking · Uganda",
+    roles: [
+      { title: "Speaker, DevFest Mbarara 2025 — Exploring LoRaWAN for IoT", period: "Nov 2025", points: [] },
+      { title: "Web Master, AWS Cloud Club", period: "Aug 2025–Feb 2026", points: [] },
+      { title: "Organizing Secretary, Student Energy at Makerere", period: "Aug 2025–Feb 2026", points: [] },
+      { title: "Ambassador, IEEE AESS-SYP 2025", period: "Jun–Jul 2025", points: [] },
+    ],
   },
 ];
 
@@ -32,8 +102,11 @@ const SKILLS = [
   { label: "support", value: "Windows · Linux · Troubleshooting · Device Setup · Logs" },
   { label: "networks", value: "TCP/IP · DNS · DHCP · Wi-Fi · IP Addressing" },
   { label: "software", value: "Python · Java · PHP · C · SQL · APIs · Git · Testing" },
-  { label: "systems", value: "LoRaWAN · GSM · Sensors · ESP32 / Arduino-class Devices" },
-  { label: "platforms", value: "Next.js · Django · FastAPI · PostgreSQL · Docker" },
+  { label: "systems", value: "LoRaWAN · GSM · Sensors · Raspberry Pi · ESP32 / Arduino-class Devices" },
+  { label: "platforms", value: "Next.js · Django · FastAPI · Flutter · Firebase · PostgreSQL · Docker" },
+  { label: "ai", value: "Gemini · Generative AI Tools" },
+  { label: "community", value: "Event Planning · Workshops · Public Speaking · Peer Mentoring" },
+  { label: "media", value: "Social Media Strategy · Content Creation · Canva Design" },
 ];
 
 export function Resume() {
@@ -197,6 +270,96 @@ export function Resume() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+
+        {/* Leadership & Community */}
+        <div data-animate="" style={{ marginBottom: 80 }}>
+          <div
+            style={{
+              fontFamily: "var(--font-mono)",
+              fontSize: 11,
+              color: "var(--dim)",
+              letterSpacing: "0.08em",
+              textTransform: "uppercase",
+              marginBottom: 28,
+            }}
+          >
+            Leadership &amp; Community
+          </div>
+          <div
+            className="cv-grid"
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr 1fr",
+              gap: 12,
+              alignItems: "start",
+            }}
+          >
+            {LEADERSHIP.map((group) => (
+              <div
+                key={group.org}
+                style={{
+                  border: "1px solid var(--border)",
+                  borderRadius: 10,
+                  padding: 24,
+                  background: "var(--surface)",
+                }}
+              >
+                <div
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    fontSize: 12,
+                    color: "var(--accent)",
+                    marginBottom: 16,
+                    lineHeight: 1.5,
+                  }}
+                >
+                  {group.org}
+                </div>
+                <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+                  {group.roles.map((role) => (
+                    <div key={role.title}>
+                      <div
+                        style={{
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "baseline",
+                          gap: 12,
+                          marginBottom: role.points.length ? 6 : 0,
+                        }}
+                      >
+                        <div style={{ fontSize: 15, fontWeight: 500 }}>
+                          {role.title}
+                        </div>
+                        <div
+                          style={{
+                            fontFamily: "var(--font-mono)",
+                            fontSize: 11,
+                            color: "var(--dim)",
+                            whiteSpace: "nowrap",
+                          }}
+                        >
+                          {role.period}
+                        </div>
+                      </div>
+                      {role.points.map((point) => (
+                        <div
+                          key={point}
+                          style={{
+                            fontSize: 14,
+                            color: "var(--dim)",
+                            lineHeight: 1.6,
+                          }}
+                        >
+                          {point}
+                        </div>
+                      ))}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 
