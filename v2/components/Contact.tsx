@@ -17,7 +17,7 @@ const SOCIALS = [
   {
     label: "Speaking",
     handle: "Sessionize",
-    href: "https://sessionize.com/asasira-arthur/",
+    href: "https://sessionize.com/Arthur_Asasira/",
   },
 ];
 

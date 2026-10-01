@@ -68,7 +68,7 @@ export function Speaking() {
               also reflects a habit of making technical ideas understandable.
             </p>
             <a
-              href="https://sessionize.com/asasira-arthur/"
+              href="https://sessionize.com/Arthur_Asasira/"
               target="_blank"
               rel="noopener noreferrer"
               data-animate=""
